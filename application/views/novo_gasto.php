@@ -8,15 +8,15 @@
 </head>
 <body>
     <h1>Novo Gasto</h1>
-    <form action="">
+    <?= form_open('gastos/salvar') ?>
         <p>Data:</p>
-        <input type="date" name="" id=""><br>
+        <input required type="date" name="data" id="" required><br>
         <p>Descrição:</p>
-        <input type="text" name="" id=""><br>
+        <input required type="text" name="descricao" id="" require><br>
         <p>Valor:</p>
-        <input type="text" name="" id=""><br><br>
-        <input type="submit" value="Enviar">
-        <button>Limpar</button><br>
-    </form>
+        <input required type="number" name="valor" id="" require><br><br>
+        <input type="submit" value="Enviar"> 
+        <input type="reset" value="Limpar">
+    <?= form_close() ?>
 </body>
 </html>

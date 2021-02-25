@@ -12,4 +12,17 @@ class Gastos extends CI_Controller {
 	{
 		$this->load->view('novo_gasto');
 	}
+
+	public function salvar()
+	{
+		$data = $this->input->post('data');
+		$descricao = $this->input->post('descricao');
+		$valor = $this->input->post('valor');
+
+		$dados['mensagem'] = "Os dados foram recebidos com sucesso!";
+		$dados["data"] = $data;
+		$dados["descricao"] = $descricao;
+		$dados["valor"] = $valor;
+		$this->load->view('confirmacao', $dados);
+	}
 }

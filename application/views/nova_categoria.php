@@ -10,9 +10,9 @@
 <h1>Nova Categoria</h1>
     <form action="">
         <p>Nome:</p>
-        <input type="date" name="" id=""><br>
+        <input type="date" name="nome" id=""><br>
         <p>Descrição:</p>
-        <input type="text" name="" id=""><br><br>
+        <input type="text" name="descricao" id=""><br><br>
         <input type="submit" value="Enviar">
         <button>Limpar</button><br>
     </form>
